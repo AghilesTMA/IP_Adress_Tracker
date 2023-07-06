@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""
+    />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+    <script src="https://kit.fontawesome.com/f1db830db4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="prjct.css" />
+    <title>prjct</title>
+</head>
+<body>
+    <main class="container">
+        <div class="firstPart">
+            <h1>IP Address Tracker</h1>
+            <div class="inputField">
+                <input type="text" name="IP" id="IP" class="ipInput" placeholder="Search for any IP Address">
+                <i class="fa-solid fa-greater-than inputBtn"></i>
+            </div>
+            <ul class="info">
+                <li>
+                    <p>ip address</p>
+                    <h2 class="ipAddress">not set</h2>
+                </li>
+                <li>
+                    <p>location</p>
+                    <h2 class="location">not set</h2>
+                </li>
+                <li>
+                    <p>timezone</p>
+                    <h2 class="timezone">not set</h2>
+                </li>
+                <li>
+                    <p>isp</p>
+                    <h2 class="isp">not set</h2>
+                </li>
+            </ul>
+        </div>
+        <div id="map"></div>
+    </main>
+    <script src="prjct.js"></script>
+</body>
+</html>
