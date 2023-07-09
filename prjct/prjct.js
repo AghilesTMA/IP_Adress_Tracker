@@ -71,7 +71,7 @@ inputBtn.addEventListener("click", () => {
       ipInput.placeholder = "Search for any IP Address";
     }, 2000);
   } else {
-    getLocation("Your api key", ipInput.value).then( //use your api key here
+    getLocation("Api_key", ipInput.value).then(//use your api key here
       (data) => {
         const {
           isp: ispProp,
